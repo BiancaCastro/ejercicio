@@ -4,6 +4,7 @@ import Form from './Form';
 import { useAppContext } from '../../contexts/AppContext';
 import Cross from '../../public/cross.svg';
 import styles from './ContactModal.module.scss';
+import * as Yup from 'yup';
 
 const ContactForm = withFormik({
   mapPropsToValues: () => {
