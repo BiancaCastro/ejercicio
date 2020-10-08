@@ -33,15 +33,14 @@
     display:flex;
     flex-direction: column;
     align-items: flex-end;
-    &a:last-child{
-      align-self: flex-start
+    &.previous{
+      align-items: flex-start;
     }
   }
 }
 .link {
   font-family: $secondaryFont;
   font-size: 2rem;
-  
 }
 
 .label {
@@ -49,15 +48,17 @@
   font-size: 1rem;
 }
 @media (max-width: 48em) {
+  .previous{
+    align-self: flex-start;
+  }
+  .next{
+    align-self: flex-end;
+  }
   .navigation {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     .link{
       margin-bottom: 1rem;
-    }
-    .gallery{
-      border:1px solid red;
     }
   }
 }
