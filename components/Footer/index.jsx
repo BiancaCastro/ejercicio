@@ -33,7 +33,7 @@ const Footer = () => {
         </li>
       </ul>
     </nav>
-    <nav className={styles.logoContainer}>
+    <nav >
       <ul >
         <li>
           <Behance />
