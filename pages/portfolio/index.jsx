@@ -19,7 +19,7 @@ const Portfolio = () => {
       <main className="container">
         <section className={styles.billboard}>
           <img src="/sanderson.jpg" />
-          <div className={styles.intro}>
+          <div className={`${styles.work} grid`}>
             <h2>Sanderson</h2>
             <p>
               Mental games, optical illusions, to eccentricities, to dreams, to successful
@@ -31,8 +31,6 @@ const Portfolio = () => {
               <a className="button button--hollow">Ver proyecto</a>
             </Link>
           </div>
-        </section>
-        <section>
           <div className={`${styles.work} grid`}>
             <div className="column">
               <img src="/s-hotel.jpg" />
