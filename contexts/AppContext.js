@@ -13,7 +13,6 @@ export const AppContextProvider = ({ children }) => {
   const toggleMenu = () => {
     setMenu(!menu);
   };
-
   const values = useMemo(
     () => ({
       menu,
