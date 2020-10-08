@@ -1,3 +1,23 @@
-.grid {}
+.grid {
+    display: flex;
+    flex-direction: column;
+}
 
-.column {}
+.column {
+    text-align: center;
+    justify-content: space-around;
+    margin:1rem;
+
+}
+
+  
+  @media (min-width: 48em) {
+   
+    .grid {
+      flex-direction: row;
+      align-items:center;
+    }
+    .column, .display{
+       text-align: left;
+    }
+  }
