@@ -9,46 +9,44 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <nav>
-        <ul className={styles.navList}>
-        <div className={styles.logoContainer}>
+    <Link href="/">
+      <a>
+        <Logo className={styles.logo} />
+      </a>
+    </Link>
+    <nav>
+      <ul className={styles.navList}>
         <li>
-            <Link href="/">
-              <a>
-                <Logo className={styles.logo} />
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a className={styles.link}>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/portfolio">
-              <a className={styles.link}>Portfolio</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <a className={styles.link}>Contáctame</a>
-            </Link>
-          </li>
-        </div>
-          <div className={styles.logoContainer}>
-            <li>
-              <Behance />
-            </li>
-            <li>
-              <Twitter />
-            </li>
-            <li>
-              <Linkedin />
-            </li>
-          </div>
-        </ul>
-      </nav>
-    </footer>
+          <Link href="/">
+            <a className={styles.link}>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/portfolio">
+            <a className={styles.link}>Portfolio</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact">
+            <a className={styles.link}>Contáctame</a>
+          </Link>
+        </li>
+      </ul>
+    </nav>
+    <nav className={styles.logoContainer}>
+      <ul >
+        <li>
+          <Behance />
+        </li>
+        <li>
+          <Twitter />
+        </li>
+        <li>
+          <Linkedin />
+        </li>
+      </ul>
+    </nav>
+  </footer>
   );
 };
 
