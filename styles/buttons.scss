@@ -1,10 +1,15 @@
 @import "./variables";
 
 .button {
-  background: $primary;
+  background:$primary;
   color: $light;
-
+  border: 1px solid $primary;
+  border-radius: 3px;
+  padding: 10px 40px;
+  text-transform: uppercase;
   &--hollow {
-
+    background: $light;
+    color: $primary;
+    border: 1px solid $primary;
   }
 }
