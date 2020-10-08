@@ -1,10 +1,32 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .footer {
-  background: $dark;
-  color: $light;
+    background: $dark;
+    color: $light;
+    padding-bottom: 0.625rem;
+    padding-top: 0.825rem;
+    display:flex;
+    justify-content: space-between;
+    & ul {
+        display: flex;
+    }
 }
-
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    &:last-child {
+        margin-left: 40vw;
+    }
+}
+.navContainer {
+    display: flex;
+    flex-direction: row;
+}
+.link {
+    margin: 0 2.5rem;
+}
 .logo {
-  path { fill: $light; }
+    path {
+        fill: $light;
+    }
 }
